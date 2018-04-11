@@ -1,0 +1,5 @@
+<% if !@category.posts.empty? %>
+  <% @category.posts.each do |post| %>
+    <%= link_to post.title, post %>
+  <% end %>
+<% end %>
