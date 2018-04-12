@@ -1,1 +1,5 @@
-
+<%= @user.username %>
+<label>Comments</label>
+<% @user.comments.each{ |comment| %>
+  <%= link_to comment.post.title, post_path(comment.post) %>
+  <% } %>
